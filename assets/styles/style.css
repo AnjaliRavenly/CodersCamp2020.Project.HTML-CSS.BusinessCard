@@ -1,0 +1,10 @@
+body { 
+    background-image: linear-gradient(to right,  #5D76A9, #6F00FF);
+}
+p{
+    color: red;
+}
+
+img {
+    width: 30%;
+}
