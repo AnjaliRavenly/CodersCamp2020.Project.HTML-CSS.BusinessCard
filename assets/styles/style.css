@@ -28,10 +28,13 @@ img {
 
 .header{
     background-color: black;
-    position: fixed;
-    /* margin: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    display: block;
+    top: 0;
+    margin: 0;
     padding: 0;
-    border: 0; */
+    border: 0;
     z-index: 999;
 }
 section{
@@ -44,10 +47,7 @@ nav a {
 .container {
     max-width: 1024px;
     margin: 0 auto;
-}
-.menu{
-    position: fixed;
-    background-color: black;
+    border: 1px solid red;
 }
 
 ul.menu{
@@ -90,7 +90,7 @@ section {
 
 }
 .welcome{
-    background-color: rgba(0, 0, 0, 0.50);
+    /* background-color: rgba(0, 0, 0, 0.50); */
     padding: 20px;
     grid-row-start: 2;
 
@@ -100,6 +100,7 @@ section {
     color: var(--text-color);
     text-align: center;
     font-size: 300%;
+    mix-blend-mode: difference;
 }
 .Button{
     background-color:  rgb(122, 122, 122);
@@ -141,7 +142,7 @@ img:hover{
     width: 100%;
 }
 .aboutMe{
-    grid-column: 2/5;
+    grid-column: 1/6;
 }
 .aboutMe h1{
     text-align: center;
@@ -153,12 +154,10 @@ img:hover{
 
 .catGallery{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
-    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 200px;
 }
 
-
-
-/* .catGallery img{
-    background-size: cover;
-} */
+.catGallery img:nth-child(8){
+    grid-row: span 2;
+}
