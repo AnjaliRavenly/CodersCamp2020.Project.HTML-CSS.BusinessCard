@@ -1,10 +1,164 @@
+:root {
+    --text-color: pink;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
 body { 
-    background-image: linear-gradient(to right,  #5D76A9, #6F00FF);
+    /* background-image: linear-gradient(to right,  #5D76A9, #6F00FF); */
+    background-color: rgb(122, 122, 122);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-size: 100%;
 }
 p{
-    color: red;
+    color: var(--text-color)
 }
 
 img {
-    width: 30%;
+    width: 100%;
 }
+
+.header{
+    background-color: black;
+    position: fixed;
+    /* margin: 0;
+    padding: 0;
+    border: 0; */
+    z-index: 999;
+}
+section{
+    padding: 1em;
+}
+nav a {
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.menu{
+    position: fixed;
+    background-color: black;
+}
+
+ul.menu{
+    display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+    margin: 0;
+    padding-left: 0;
+	justify-content: flex-end;
+	text-align: center;
+}
+ul.menu .logo {
+    justify-self: flex-start;
+}
+ul.menu li.spacer {
+    flex-grow: 1;
+}
+ul.menu li{
+    display: block;
+}
+
+ul.menu li a {
+    padding: 10px;
+    display: block;
+    /* border: 1px solid red; */
+}
+
+section {
+    min-height: 700px;
+}
+
+.bg1 {
+    background-size: cover;
+    background-image: url('../img/view.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.welcome{
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 20px;
+    grid-row-start: 2;
+
+}
+.welcome h1{
+    padding: 0px 50px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 300%;
+}
+.Button{
+    background-color:  rgb(122, 122, 122);
+    display: block;
+    width: 150px;
+    padding: 12px 30px 12px 30px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.Button a{
+    color: var(--text-color);
+}
+.Button:hover{
+    background-color: red;
+}
+img{
+    filter: grayscale(100%);
+
+}
+img:hover{
+    filter: grayscale(0%);
+}
+.personal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.poster{
+    grid-column-start: 3;
+  
+}
+
+.poster img{
+    border-radius: 50%;
+    width: 100%;
+}
+.aboutMe{
+    grid-column: 2/5;
+}
+.aboutMe h1{
+    text-align: center;
+    
+}
+.aboutMe p{
+    text-align: center;
+}
+
+.catGallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-auto-rows: 150px;
+}
+
+
+
+/* .catGallery img{
+    background-size: cover;
+} */
