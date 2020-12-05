@@ -7,7 +7,7 @@
 }
 
 body { 
-    background-color: #7d0038;
+    /* background-color: #7d0038; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,6 +24,12 @@ a{
 }
 p{
     color: var(--text-color)
+}
+h1{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 3em;
+    mix-blend-mode: difference;
 }
 img{
     filter: grayscale(100%);
@@ -90,13 +96,7 @@ ul.menu li a {
     padding: 20px;
 
 }
-.welcome h1{
-    padding: 0px 50px;
-    color: var(--text-color);
-    text-align: center;
-    font-size: 3em;
-    mix-blend-mode: difference;
-}
+
 .contactButton{
     background-color:  rgb(122, 122, 122);
     display: block;
@@ -124,12 +124,7 @@ ul.menu li a {
     border-radius: 50%;
     width: 25%;
 }
-.aboutMe h1{
-    text-align: center;
-    color: var(--text-color);
-    text-transform: uppercase;
-    
-}
+
 .aboutMe p{
     text-align: center;
 }
@@ -145,12 +140,8 @@ ul.menu li a {
 }
 .gallery h1{
     position: absolute;
-    margin: 10px;
-    color: var(--text-color);
-    font-size: 3em;
-    mix-blend-mode: difference;
+    margin: auto;
     z-index: 1;
-    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -162,6 +153,152 @@ ul.menu li a {
     transition: transform o.2 ease-in-out;
 }  
 .catGallery img:hover{
-    transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5) rotate(-5deg);
     z-index: 3;
+}
+.timelineBlock{
+    position: relative;
+    display: grid;
+    grid-template-columns: [left]1fr [right]1fr;
+    grid-template-rows: 1fr;
+}
+
+.timelineBlock p{
+    border: 5px solid green;
+    border-image: linear-gradient(to right, rgb(241, 14, 173) 0%, rgb(0, 13, 128) 100%);
+    border-image-slice: 1;
+    grid-column: right;
+    background-color: black;
+    display: block;
+    grid-row: 1/3;
+    text-align: center;
+    margin: auto;
+    padding: 20px 5px;
+    width: 90%;
+    }
+.timelineBlock p::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    right: 95%;
+    top: 50px;
+    grid-column: right;
+    border: medium solid rgb(241, 14, 173);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(241, 14, 173) transparent transparent;
+}
+.ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:rgb(0, 13, 128);
+    border: 2px solid rgb(241, 14, 173);
+    margin: 0 auto;
+    grid-column: center;
+    grid-column: left;
+}
+.timelineBlock h2{
+    text-align: center;
+    margin-bottom: 0;
+    grid-column: left;
+}
+.timelineBlock:first-child h2{
+    background-color: white;
+}
+
+.timelineBlock h2::before{
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: rgb(241, 14, 173);
+    left: 25%;
+    transform: translateX(-50%);
+}
+.timelineBlock:last-child h2::before{
+    height: 50%;
+  }
+
+@media only screen and (min-width: 600px) {
+    .timelineBlock{
+        position: relative;
+        display: grid;
+        grid-template-columns: [left]1fr [center]auto [right]1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .timelineBlock:nth-child(2n) p{
+        border: 5px solid green;
+        border-image: linear-gradient(to right, rgb(0, 13, 128) 0%, rgb(241, 14, 173) 100%);
+        border-image-slice: 1;
+        grid-column: left;
+        
+    }
+    .timelineBlock:nth-child(2n+1) p{
+        border: 5px solid green;
+        border-image: linear-gradient(to right, rgb(241, 14, 173) 0%, rgb(0, 13, 128) 100%);
+        border-image-slice: 1;
+        grid-column: right;
+
+    }
+
+    .timelineBlock:nth-child(2n) p::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        width: 0;
+        z-index: 1;
+        left: 95%;
+        top: 50px;
+        grid-column: left;
+        border: medium solid rgb(241, 14, 173);
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent rgb(241, 14, 173);
+    }
+    .timelineBlock:nth-child(2n+1) p::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        width: 0;
+        z-index: 1;
+        right: 95%;
+        top: 50px;
+        grid-column: right;
+        border: medium solid rgb(241, 14, 173);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgb(241, 14, 173) transparent transparent;
+    }
+
+    .ball{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color:rgb(241, 14, 173);
+        border: 1px solid  rgb(0, 13, 128);
+        margin: 0 auto;
+        grid-column: center;
+        
+    }
+    .timelineBlock h2{
+        text-align: center;
+        grid-column: center;
+        margin-bottom: 0;
+    }
+    .timelineBlock h2::before{
+        content: ' ';
+        z-index: -1;
+        position: absolute;
+        display: block;
+        width: 2px;
+        height: 100%;
+        background: rgb(241, 14, 173);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .timelineBlock:last-child h2::before{
+      height: 50%;
+    }
 }
