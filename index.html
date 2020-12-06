@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Rakotna - wizytówka</title>
     <link rel="stylesheet" type='text/css' media='screen' href="assets/styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="header">
@@ -24,10 +25,10 @@
 
     <main>
         <section class="bg1">
-            <div class="welcome container">
+            <div class="welcome">
                 <h1>Witaj na mojej stronie</h1>
-                <div class='contactButton'>
-                    <a href="#">NAPISZ DO MNIE</a>
+                <div class='button'>
+                    <a href="#">Napisz do mnie</a>
                 </div>
             </div>
         </section>
@@ -116,26 +117,35 @@
             </div>
         </section>
 
-        <section class="container contact">
-            <h1>Może chcesz do mnie napisać?</h1>
-            <form action="GET">
-                <input type='text' placeholder="imię i nazwisko"/>
-                <input type='text' placeholder="e-mail"/>
-                <textarea placeholder="wiadomość"></textarea>
-                <input type='submit' value="Wyślij" class="button"/>
-                <input type='reset' value='Usuń'/>
-            </form>
+        <section class="contact">
+            <div class="container">
+                <h1>Może chcesz do mnie napisać?</h1>
+                <div class='contactForm'>
+                    <form action="GET">
+                        <div class="userData">
+                            <input  type='text' placeholder="imię i nazwisko"/>
+                            <input type='text' placeholder="e-mail"/>
+                        </div>
+                        <textarea name="message" placeholder="wiadomość"></textarea>
+                        <input type='submit' value="Wyślij" class="button formButton"/>
+                        <input type='reset' class="button formButton" value='Usuń'/>
+                    </form>
+                </div>
+            </div>
         </section>
 
-        <section class="container">
+        <section class="socialmedia container">
             <h1>A może kontakt przez social media?</h1>
-            <div><p>FB</p></div>
-            <div><p>linkin</p></div>
-            <div><p>Inst</p></div>
+            <div class="icon">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
         </section>
-        
     </main>
-
-    <footer></footer>
+    <footer class="footer">
+        <h2>Create by Anna Rakotna <a href="#" class="fa fa-github"></a></h2>
+    </footer>
 </body>
 </html>
