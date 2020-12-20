@@ -6,6 +6,8 @@
     <title>Anna Rakotna - wizytówka</title>
     <link rel="stylesheet" type='text/css' media='screen' href="assets/styles/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=PT+Sans&display=swap" rel="stylesheet">  
 </head>
 <body>
     <header class="header">
@@ -14,11 +16,11 @@
                 <li class="logo"><a href="/">Anna Rakotna</a></li>
                 <li class="spacer"></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">O mnie</a></li>
-                <li><a href="#">Koty</a></li>
-                <li><a href="#">Timeline</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Social Media</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#cats">Koty</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#social">Social Media</a></li>
             </ul>
         </nav>
     </header>
@@ -26,14 +28,17 @@
     <main>
         <section class="bg1">
             <div class="welcome">
-                <h1>Witaj na mojej stronie</h1>
+                <div class='main_text'>
+                    <h1>Anna Rakotna</h1>
+                    <p>programista python/web developer</p>
+                </div>
                 <div class='button'>
-                    <a href="#">Napisz do mnie</a>
+                    <a href="#contact">Napisz do mnie</a>
                 </div>
             </div>
         </section>
         
-        <section class="container">
+        <section class="container" id="about">
             <div class='poster'>
                 <img src="assets/img/ja.jpg" alt="to ja">
             </div>
@@ -51,7 +56,7 @@
                 </div>
         </section>
         
-        <section class="gallery">
+        <section class="gallery", id="cats">
             <div class="container">
             <h1> Bez kotów to nie życie</h1>
             <div class='catGallery'>
@@ -75,7 +80,7 @@
             </div>
         </section>
         
-        <section class="container">
+        <section class="container" id='timeline'>
             <h1>Moje kamienie milowe</h1>
             <div class="timeline">
                 <div class='timelineBlock'>
@@ -117,7 +122,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id='contact'>
             <div class="container">
                 <h1>Może chcesz do mnie napisać?</h1>
                 <div class='contactForm'>
@@ -128,14 +133,14 @@
                         </div>
                         <textarea name="message" placeholder="wiadomość"></textarea>
                         <input type='submit' value="Wyślij" class="button formButton"/>
-                        <input type='reset' class="button formButton" value='Usuń'/>
+                        <input type='reset' class="button formButton" value='Wyczyść'/>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section class="socialmedia container">
-            <h1>A może kontakt przez social media?</h1>
+        <section class="socialmedia container" id='social'>
+            <h1>Social media</h1>
             <div class="icon">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-linkedin"></a>
