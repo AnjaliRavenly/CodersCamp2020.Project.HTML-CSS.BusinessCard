@@ -122,19 +122,30 @@
             </div>
         </section>
 
-        <section class="contact" id='contact'>
+        <section id='contact'>
             <div class="container">
-                <h1>Może chcesz do mnie napisać?</h1>
-                <div class='contactForm'>
-                    <form action="GET">
-                        <div class="userData">
-                            <input  type='text' placeholder="imię i nazwisko"/>
-                            <input type='text' placeholder="e-mail"/>
-                        </div>
-                        <textarea name="message" placeholder="wiadomość"></textarea>
-                        <input type='submit' value="Wyślij" class="button formButton"/>
-                        <input type='reset' class="button formButton" value='Wyczyść'/>
-                    </form>
+                <div class="contactForm tabs">
+                    <input type="checkbox" name="contactForm" id="contactForm" class="sr-only">
+                    <div class='tab'>
+                        <h1>Może chcesz do mnie napisać?</h1>
+                        <form action="GET">
+                            <div class="userData">
+                                <input  type='text' placeholder="imię i nazwisko"/>
+                                <input type='text' placeholder="e-mail"/>
+                            </div>
+                            <textarea name="message" placeholder="wiadomość"></textarea>
+                            <label for="contactForm" class="button formButton">Wyślij</label>
+                            <input type='reset' class="button formButton" value='Wyczyść'/>
+                        </form>
+                    </div>
+                    <div class='tab'>
+                        <h1>Dzięki za wiadomość!</h1>
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                        </svg>
+                        <label for="contactForm" class="button">Powrót</label>
+                    </div>
                 </div>
             </div>
         </section>
