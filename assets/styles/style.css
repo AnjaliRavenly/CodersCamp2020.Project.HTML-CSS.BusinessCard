@@ -146,13 +146,30 @@ ul.menu li a:hover {
 
 .bg1 {
     background-size: cover;
-    background-image: url('../img/view.jpg');
+    background-image: url('../img/view-mobile-l.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
     display: block;
     height: 600px;
+}
 
+@media screen and (min-width: 425px) {
+    .bg1 {
+        background-image: url('../img/view-tablet.jpg');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bg1 {
+        background-image: url('../img/view-laptop-l.jpg');
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .bg1 {
+        background-image: url('../img/view-4k.jpg');
+    }
 }
 
 .welcome {
