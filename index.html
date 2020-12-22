@@ -2,17 +2,182 @@
 <html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna Rakotna - wizytówka</title>
+  <link rel="stylesheet" type='text/css' media='screen' href="assets/styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap" rel="stylesheet">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
+  <header class="header">
+    <nav class="container" id="nav">
+      <div class="forHam">
+        <h2 class="logo"><a href="/">Anna Rakotna</a></h2>
+        <label for="hamMenu" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <!-- class="sr-only"  -->
+      <input type="checkbox" name="hamMenu" id="hamMenu" class="sr-only">
+      <div class="tab">
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#cats">Koty</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#social">Social Media</a></li>
+        </ul>
+      </div>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
+    </nav>
+  </header>
 
+  <main>
+    <section class="bg1">
+      <div class="welcome">
+        <div class='main_text'>
+          <h1>Anna Rakotna</h1>
+          <p>programista python/web developer</p>
+        </div>
+        <div class='button'>
+          <a href="#contact">Napisz do mnie</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <div class='poster'>
+        <img loading="lazy" src="assets/img/ja-mod.jpg" alt="to ja" width="82" height="100">
+      </div>
+      <div class='aboutMe'>
+        <h1>O mnie</h1>
+        <p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było ogrodniczki. Tylko co jasnej bronisz
+          Częstochowy i aby w końcu stoła naprzód dzieci mało w Litwę. nieraz jego bok usiadła owa szczęśliwa gałka
+          oznaczała. Inaczej bawiono się zdołał. Prostym.</p>
+
+        <p>Mościwego Pana zastępuje i gdzie nie szpieg, a młodszej przysunąwszy z liczby pługów orzących wcześnie łany
+          ogromne ugoru czarnoziemne, zapewne należne do woli nagadać nie widział krótki, jasnozłoty a młodszej
+          przysunąwszy z nim szedł z nadzwyczajnej ich nie rzuca w grób się nagłe.</p>
+      </div>
+    </section>
+
+    <section class="gallery" id="cats">
+      <div class="container">
+        <h1> Bez kotów to nie życie</h1>
+        <div class='catGallery'>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/1.jpg" alt="kot1"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/2.jpg" alt="kot2"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/3.jpg" alt="kot3"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/4.jpg" alt="kot4"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/5.jpg" alt="kot5"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/6.jpg" alt="kot6"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/7.jpg" alt="kot7"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/8.jpg" alt="kot8"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/9.jpg" alt="kot9"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/10.jpg" alt="kot10"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/11.jpg" alt="kot11"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/12.jpg" alt="kot12"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/13.jpg" alt="kot13"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/14.jpg" alt="kot13"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/15.jpg" alt="kot14"></div>
+          <div class='cat'><img loading="lazy" width="82" height="82" src="assets/img/16.jpg" alt="kot15"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id='timeline'>
+      <h1>Moje kamienie milowe</h1>
+      <div class="timeline">
+        <div class='timelineBlock'>
+          <h2>11.2020</h2>
+          <div class='ball'></div>
+          <p>Kurs CodeCamp</p>
+        </div>
+        <div class='timelineBlock'>
+          <h2>08.2020</h2>
+          <div class='ball'></div>
+          <p>Odkrycie potrzeby frontendu</p>
+        </div>
+        <div class='timelineBlock'>
+          <h2>06.2020</h2>
+          <div class='ball'></div>
+          <p>Sklep internetowy z Django</p>
+        </div>
+        <div class='timelineBlock'>
+          <h2>10.2019</h2>
+          <div class='ball'></div>
+          <p>Pierwsza aplikacja w Django</p>
+        </div>
+        <div class='timelineBlock'>
+          <h2>06.2019</h2>
+          <div class='ball'></div>
+          <p>Pierwsza aplikacja we Flasku</p>
+        </div>
+        <div class='timelineBlock'>
+          <h2>03.2018</h2>
+          <div class='ball'></div>
+          <p>Rozpoczęcie studiów</p>
+        </div>
+        <div class='timelineBlock'>
+          <h2>01.2018</h2>
+          <div class='ball'></div>
+          <p>Nauka Pythona</p>
+        </div>
+      </div>
+    </section>
+
+    <section id='contact'>
+      <div class="container">
+        <div class="contactForm tabs">
+          <input type="checkbox" name="contactForm" id="contactForm" class="sr-only">
+          <div class='tab'>
+            <h1>Może chcesz do mnie napisać?</h1>
+            <form action="/" method="POST">
+              <div class="userData">
+                <input type='text' placeholder="imię i nazwisko" autocomplete="name" />
+                <input type='text' placeholder="e-mail" required autocomplete="email" />
+              </div>
+              <textarea name="message" placeholder="wiadomość" required></textarea>
+              <label for="contactForm" class="button formButton">Wyślij</label>
+              <input type='reset' class="button formButton" value='Wyczyść' />
+            </form>
+          </div>
+          <div class='tab'>
+            <h1>Dzięki za wiadomość!</h1>
+            <svg class="heart" viewBox="0 0 32 29.6">
+              <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+            </svg>
+            <label for="contactForm" class="button">Powrót</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="socialmedia container" id='social'>
+      <h1>Social media</h1>
+      <div class="icon">
+        <a rel="noopener" target="_blank" href="https://facebook.com" class="fa fa-facebook"></a>
+        <a rel="noopener" target="_blank" href="https://linkedin.com" class="fa fa-linkedin"></a>
+        <a rel="noopener" target="_blank" href="https://github.com" class="fa fa-github"></a>
+        <a rel="noopener" target="_blank" href="https://instagram.com" class="fa fa-instagram"></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2>Create by Anna Rakotna <a rel="noopener" target="_blank" href="#" class="fa fa-github"></a></h2>
+  </footer>
 </body>
+
 </html>
