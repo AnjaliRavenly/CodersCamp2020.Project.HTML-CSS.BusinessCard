@@ -7,21 +7,32 @@
     <link rel="stylesheet" type='text/css' media='screen' href="assets/styles/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Langar&family=PT+Sans&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class="header">
-        <nav class="container">
-            <ul class="menu">
-                <li class="logo"><a href="/">Anna Rakotna</a></li>
-                <li class="spacer"></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#cats">Koty</a></li>
-                <li><a href="#timeline">Timeline</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-                <li><a href="#social">Social Media</a></li>
-            </ul>
+        <nav class="container" id="nav">
+            <div class="forHam">
+                <h2 class="logo"><a href="/">Anna Rakotna</a></h2>
+                <label for="hamMenu" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <!-- class="sr-only"  -->
+            <input type="checkbox" name="hamMenu" id="hamMenu" class="sr-only">
+            <div class="tab">
+                    <ul class="menu">
+                        <li class="tab"><a href="#">Home</a></li>
+                        <li><a href="#about">O mnie</a></li>
+                        <li><a href="#cats">Koty</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#social">Social Media</a></li>
+                    </ul>
+            </div>
+    
         </nav>
     </header>
 
