@@ -215,12 +215,14 @@ ul.menu li a:hover {
 }
 
 .poster img {
+    height: auto;
     border-radius: 50%;
     width: 25%;
+    max-width: 175px;
 }
 
 .aboutMe p {
-    text-align: center;
+    text-align: justify;
     padding: 10px 30px;
     color: var(--p-color);
 }
@@ -254,6 +256,7 @@ ul.menu li a:hover {
 
 .catGallery img {
     width: 100%;
+    height: auto;
     position: relative;
     transition: transform o.2 ease-in-out;
 }
@@ -516,6 +519,13 @@ textarea {
 ************************************************/
 
 @media only screen and (min-width: 600px) {
+    .aboutMe {
+        max-width: 35em;
+        margin: 0 auto;
+    }
+    .aboutMe p {
+        text-align: center;
+    }
     .timelineBlock {
         position: relative;
         display: grid;
